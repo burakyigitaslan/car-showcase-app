@@ -51,7 +51,26 @@ const SearchManufacturer = ({
             leaveTo="opacity-0"
             afterLeave={() => setQuery("")}
           >
-            <Combobox.Options>
+            <Combobox.Options
+              className="
+                absolute 
+                mt-1 
+                max-h-60 
+                w-full 
+                overflow-auto 
+                rounded-md 
+                bg-white 
+                py-1 
+                text-base 
+                shadow-lg 
+                ring-1 
+                ring-black 
+                ring-opacity-5 
+                focus:outline-none 
+                sm:text-sm
+                z-10"
+              static
+            >
               {filteredManufacturers.length === 0 && query !== "" ? (
                 <div className="relative cursor-default select-none py-2 px-4 text-gray-700">
                   Nothing found.
@@ -76,6 +95,7 @@ const SearchManufacturer = ({
                         >
                           {item}
                         </span>
+
                         {selected ? (
                           <span
                             className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
