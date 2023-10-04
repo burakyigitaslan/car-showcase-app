@@ -1,10 +1,11 @@
-import { Footer, Navbar } from "@/components";
 import "./globals.css";
 import type { Metadata } from "next";
 
+import { Footer, Navbar } from "@/components";
+
 export const metadata: Metadata = {
   title: "CarHub",
-  description: "Discover the best cars in the world.",
+  description: "Discover world's best car showcase application",
 };
 
 export default function RootLayout({
