@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col justify-start items-start gap-6">
           <Image
             src="/logo.svg"
-            alt="logo"
+            alt="CarHub Logo"
             width={118}
             height={18}
             className="object-contain"
